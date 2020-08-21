@@ -1,0 +1,131 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Styling */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  align-content:center
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#grapnotic-logo {
+  position: absolute;
+  top: 15%;
+  font-family: 'Alata', sans-serif;
+  width: 100%;
+}
+
+#grapnotic-logo h1{
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.countdown-section {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: calc(100vh - 60vh);
+}
+
+.countdown-text {
+  font-size: 2rem;
+}
+
+.countdown {
+  width: 600px;
+  display: flex;
+  margin: 2rem auto;
+  justify-content: space-evenly;
+}
+
+.countdown .time {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  min-width: 110px;
+  padding: 10px 5px 15px;
+  border: 2px solid black;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.countdown .time span {
+  font-weight: 600;
+  font-size: initial;
+}
+
+.contact-socials {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 120px;
+}
+
+.contact-social__each {
+  margin: 20px;
+}
+
+.contact-social__each:hover {
+  fill: #0024ff;
+}
+
+@media only screen and (max-width: 768px) {
+  #grapnotic-logo h1{
+    font-size: 3.5rem;
+  }
+
+  .countdown-text {
+    font-size: 1.5rem;
+  }
+
+  .countdown {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+
+  .countdown .time {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #grapnotic-logo h1 {
+    font-size: 2rem;
+  }
+
+  .countdown {
+    width: 200px;
+  }
+
+  .countdown-section {
+    margin-top: calc(100vh - 70vh);
+  }
+
+  .countdown .time {
+    min-width: 80px;
+    font-size: 1.5rem;
+  }
+
+  .contact-socials {
+    bottom: 60px;
+  }
+}
+
