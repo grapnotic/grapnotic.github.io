@@ -1,4 +1,4 @@
-var countDate = new Date('Sep 21, 2020 23:59:59').getTime();
+var countDate = new Date('Sep 21, 2021 23:59:59').getTime();
 function newYear() {
   var now = new Date().getTime();
   gap = countDate - now;
